@@ -3,6 +3,10 @@ Repositorio com a estrutura do servidor do Jenkins
 
 Após iniciar uma instancia EC2 na AWS, clone este repositório, e entre no endereço do ip publico da instancia do jenkins
 
+Para desbloquear o acesso ao jenkins utilize o seguinte comando na instancia para pegar a senha de administrtador 
+```docker exec -ti jenkins-pod cat /var/jenkins_home/secrets/initialAdminPassword```
+
+
 Ao abrir a pagina do jenkins escolha a  opção de instalar os plugins recomendados
 
 Quando finalizar a instalação, Preencha as informações de criação de usuario e clique em ```Save and Finish```
